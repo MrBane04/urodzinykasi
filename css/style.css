@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    background-image: url('../picturesAndVideos/hellokitty.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ff6b9d, #ffc3a0);
+    width: 33vw;
+    height: 25vh;
+    border: none;
+    border-radius: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15), 
+                0 4px 10px rgba(255,255,255,0.2) inset;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.3);
+}
+
+.box:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.2),
+                0 6px 15px rgba(255,255,255,0.3) inset;
+}
+
+.box h2 {
+    margin: 0;
+    font-size: 32px;
+    text-align: center;
+}
+
+.box p {
+    margin: 0;
+    text-align: center;
+    line-height: 1.4;
+    padding: 0 20px;
+}
+
+.box .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    padding: 20px;
+}
+
+.box img {
+    max-width: 40%;
+    max-height: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.box .content p {
+    flex: 1;
+    margin: 0;
+    text-align: left;
+    line-height: 1.4;
+    padding: 0;
+}
+
+.box video {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.box-twenty {
+    width: 25vw;
+    height: 60vh;
+    padding: 15px;
+}
+
+.box-twenty video {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: contain;
+}
